@@ -22,6 +22,7 @@ item.forEach(el => el.addEventListener("click", function() {
 
 const basketBox = document.getElementById("basket-box");
 const basketBlock = document.querySelector(".basket-block-1");
+
 basketBox.addEventListener("click", function() {
     basketBox.classList.toggle('redbtn')
     basketBlock.classList.toggle('displayNone');

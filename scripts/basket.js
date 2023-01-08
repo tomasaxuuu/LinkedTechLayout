@@ -1,13 +1,15 @@
-
 const basket = document.querySelector(".card-basket");
 const basketBox1 = document.querySelector('.circle');
+
 let countitem = 0;
 // обращаемся ко всему окну
 window.addEventListener("click", function(event) {
     
      // находим родителя наших кнопок
     if(event.target.closest('.basket-block img')) {
+
         const card = event.target.closest('.item-product');
+
         // характеристики нашего очередного товара
         const product = {
             id: card.dataset.id,
@@ -17,6 +19,8 @@ window.addEventListener("click", function(event) {
             price: card.querySelector('.newPrice').innerHTML,
             priceNumber: +card.querySelector('.newPrice').innerHTML.slice(2, -3),
         };
+        
+        // карточка товара, то есть так как она будет вставляться в блок корзины
         const cardItem = `
             <div class="item-product" data-id="${product.id}">
                 <img src="${product.img}" alt="headphones">
@@ -37,11 +41,13 @@ window.addEventListener("click", function(event) {
                 </div>
             </div>
         `;
-       
-       
+        
+        // кол-во товаров в корзине
         countitem += +product.counter;
-         // вставка нашего товара в наш блок
+
+         // вставка нашего товара в наш блок корзины
         basket.insertAdjacentHTML('beforeend', cardItem);
+
         basketBox1.innerHTML = `${countitem}`;
     }
         

@@ -1195,10 +1195,10 @@ legend {
 
 .circle {
   position: absolute;
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   top: 0;
-  right: 340px;
+  right: -15px;
   background: #C72535;
   font-weight: 400;
   font-size: 10px;
@@ -1206,9 +1206,10 @@ legend {
   text-transform: uppercase;
   color: #FFFFFF;
   border-radius: 15px;
+  z-index: 1;
 }
 
-.pages {
+#basket-box {
   position: relative;
 }
 

@@ -1,4 +1,3 @@
-
 // обращаемся ко всему окну
 window.addEventListener("click", function(event) {
     let counter;
