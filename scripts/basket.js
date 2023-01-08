@@ -1,6 +1,7 @@
 
 const basket = document.querySelector(".card-basket");
-
+const basketBox1 = document.querySelector('.circle');
+let countitem = 0;
 // обращаемся ко всему окну
 window.addEventListener("click", function(event) {
     
@@ -36,8 +37,13 @@ window.addEventListener("click", function(event) {
                 </div>
             </div>
         `;
-        // вставка нашего товара в наш блок
+       
+       
+        countitem += +product.counter;
+         // вставка нашего товара в наш блок
         basket.insertAdjacentHTML('beforeend', cardItem);
-        
+        basketBox1.innerHTML = `${countitem}`;
     }
+        
 });
+

@@ -31,6 +31,7 @@
     justify-content: $center;
     padding-bottom: 50px;
     display: none;
+    transition: all .5s;
 }
 .displayNone {
     display: flex;
@@ -68,20 +69,24 @@
 }
 .button-item {
     padding: 5px 17px;
-    background-color:rgb(107, 170, 172);
+    background: #247CC0;
     text-align: center;
     font-size: 18px;
+    color: $white;
 }
 .button-count {
     padding: 5px 17px;
-    background-color:rgb(107, 170, 172);
+    background: #247CC0;
     text-align: center;
     font-size: 18px;
     border-radius: 5px;
 }
 .button-item:nth-child(odd) {
     cursor: pointer;
-    transition: all 0.2s ease-in 0s;
+    &:hover {
+        background: #5498cb;
+        color: $linkCLR;
+    }
 }
 .buttons {
     display: flex;
@@ -91,4 +96,21 @@
 }
 .button-item:last-child {
     border-radius: 0px 5px 5px 0px;
+}
+.circle {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 0;
+    right: 340px;
+    background: #C72535;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 15px
+}
+.pages {
+    position: relative;
 }
