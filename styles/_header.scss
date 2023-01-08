@@ -1,0 +1,75 @@
+@import './variables';
+header {
+    left: 0px;
+    right: 0;
+    margin-left: auto;
+    margin-right:  auto;
+    top: 0px;
+    background: $white;
+    z-index: 200;
+    position: fixed;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.logo {
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
+}
+.header-nav {
+    display: $flex ;
+    justify-content: space-between;
+    align-items: $center;
+    padding: 22px 0 34px 0;
+    height: 90px;
+}
+.navOther {
+    cursor: pointer;
+    list-style: none;
+    display: $flex ;
+    gap: 34px;
+    align-items: center;
+}
+.ul-navmenu {
+    display: $flex ;
+    gap: 56px;
+    list-style: none;
+}
+.nav-item {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+    transition: all ease-in .5s;
+    a {
+        text-decoration: none;
+        color: $linkCLR;
+        &:hover {
+            color: #247cc0;
+        }
+    }
+    &:nth-child(6) {
+        &::after {
+            display: none;
+        }
+    }
+    &::after {
+        background-size: contain;
+        background-repeat: no-repeat;
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        border-top: 1px solid $linkCLR;
+        border-right: 1px solid $linkCLR;
+        top: 6px;
+        opacity: 0.7;
+        right: -16px;
+        transform: rotate(135deg);
+    }
+}

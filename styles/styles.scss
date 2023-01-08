@@ -1,0 +1,27 @@
+@import "./header";
+@import "./burger";
+@import "./footer";
+@import "./main";
+@import "./media";
+@import "./reset";
+@import "./slider";
+@import "./variables";
+@import "./basket";
+
+.wrap-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    height: auto !important;
+}
+body {
+    font-family: $fontHint;
+    font-style: $normal;
+}
+.wooman-container {
+    max-width: 1918px;
+    margin: 0 auto;
+    padding: 0 29px;
+    height: auto !important;
+}
