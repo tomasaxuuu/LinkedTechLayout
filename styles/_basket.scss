@@ -8,11 +8,28 @@
     width: 100%;
     .item-product {
         width: 300px;
-        height: 350px;
+        height: 380px;
+        padding-bottom: 15px;
+        .delete-item {
+            padding: 5px 17px;
+            background: #C72535;
+            color: $white;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all ease-in-out .5s;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
     }
     .product-name {
         font-size: 15px;
         line-height: 20px;
+    }
+    .price-and-colors {
+        margin-bottom: 5px;
     }
 }
 .card-basket {
@@ -69,14 +86,15 @@
 }
 .button-item {
     padding: 5px 17px;
-    background: #247CC0;
+    background: #a1a8af;
     text-align: center;
     font-size: 18px;
     color: $white;
 }
 .button-count {
     padding: 5px 17px;
-    background: #247CC0;
+    background: #a1a8af;
+    color: $white;
     text-align: center;
     font-size: 18px;
     border-radius: 5px;
@@ -114,4 +132,17 @@
 }
 #basket-box {
     position: relative;
+}
+.delete-all {
+    padding: 5px 17px;
+    background: #C72535;
+    color: $white;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease-in-out .5s;
+    &:hover {
+        opacity: 0.7;
+    }
 }
