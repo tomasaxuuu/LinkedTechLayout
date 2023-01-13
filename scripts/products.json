@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "img": "./imgs/main/products/mouse.png",
+        "title": "Apple Magic Mouse",
+        "counter": 1,
+        "price": "$ 269.99",
+        "oldPrice": "$ 300.99",
+        "sale": "Get up to 10% off Today Only!",
+        "alt": "mouse"
+    },
+    {
+        "id": 2,
+        "img": "./imgs/main/products/column.png",
+        "title": "Black iPhone Speaker",
+        "counter": 1,
+        "price": "$ 239.99",
+        "oldPrice": "$ 300.99",
+        "sale": "Get up to 20% off Today Only!",
+        "alt": "iphone"
+    },
+    {
+        "id": 3,
+        "img": "./imgs/main/products/keyboard.png",
+        "title": "iOS Keyboard",
+        "counter": 1,
+        "price": "$ 149.99",
+        "oldPrice": "$ 300.99",
+        "sale": "Get up to 50% off Today Only!",
+        "alt": "keyboard"
+    },
+    {
+        "id": 4,
+        "img": "./imgs/main/products/laptop.png",
+        "title": "Mackbook Pro",
+        "counter": 1,
+        "price": "$ 149.99",
+        "oldPrice": "$ 300.99",
+        "sale": "Get up to 50% off Today Only!",
+        "alt": "mackbook"
+    },
+    {
+        "id": 5,
+        "img": "./imgs/main/products/headphones.png",
+        "title": "Black Headphone",
+        "counter": 1,
+        "price": "$ 149.99",
+        "oldPrice": "$ 300.99",
+        "sale": "Get up to 50% off Today Only!",
+        "alt": "headphone"
+    },
+    {
+        "id": 6,
+        "img": "./imgs/main/products/speaker.png",
+        "title": "iPhone Speaker",
+        "counter": 1,
+        "price": "$ 300,99",
+        "oldPrice": "$ 400.99",
+        "sale": "No sale!",
+        "alt": "speaker"
+    }
+]

@@ -26,11 +26,27 @@ header {
 }
 
 .navOther {
+  position: relative;
   cursor: pointer;
-  list-style: none;
   display: flex;
   gap: 34px;
-  align-items: center;
+}
+
+.circleHeader {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  right: 40px;
+  top: -4px;
+  background: #C72535;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border-radius: 15px;
+  z-index: 1;
 }
 
 .ul-navmenu {
@@ -1093,7 +1109,7 @@ legend {
 .basket .item-product {
   width: 300px;
   height: 380px;
-  padding-bottom: 15px;
+  padding: 35px 30px 15px 30px;
 }
 .basket .item-product .delete-item {
   padding: 5px 17px;
@@ -1114,6 +1130,13 @@ legend {
 }
 .basket .price-and-colors {
   margin-bottom: 5px;
+}
+.basket .newPrice {
+  font-size: 17px;
+}
+.basket .oldPrice {
+  opacity: 0.8;
+  font-size: 15px;
 }
 
 .card-basket {
@@ -1148,6 +1171,10 @@ legend {
   color: #030D15;
 }
 
+.title-zakaz {
+  text-align: center;
+}
+
 .redbtn {
   color: #C72535;
 }
@@ -1158,7 +1185,6 @@ legend {
   color: #383d41;
   background-color: #e2e3e5;
   border-color: #d6d8db;
-  width: 320px;
 }
 
 .basket-block {
@@ -1180,6 +1206,22 @@ legend {
   text-align: center;
   font-size: 18px;
   color: #ffffff;
+}
+
+.pages .circle {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 0;
+  right: -15px;
+  background: #C72535;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border-radius: 15px;
+  z-index: 1;
 }
 
 .button-count {
@@ -1209,22 +1251,6 @@ legend {
 
 .button-item:last-child {
   border-radius: 0px 5px 5px 0px;
-}
-
-.circle {
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  top: 0;
-  right: -15px;
-  background: #C72535;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 16px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  border-radius: 15px;
-  z-index: 1;
 }
 
 #basket-box {
