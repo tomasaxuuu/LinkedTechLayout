@@ -1,5 +1,5 @@
-[
-    {
+{
+    "items": [{
         "id": 1,
         "img": "./imgs/main/products/mouse.png",
         "title": "Apple Magic Mouse",
@@ -59,4 +59,4 @@
         "sale": "No sale!",
         "alt": "speaker"
     }
-]
+]}

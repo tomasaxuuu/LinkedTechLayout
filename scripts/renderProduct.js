@@ -3,7 +3,7 @@ renderProducts();
 //функция рендера всех товаров
 function renderProducts () {
     let CATALOG = []; 
-    fetch('scripts/products.json')
+    fetch('http://localhost:3000/items')
         .then(res => res.json())
         .then(body => {
             CATALOG = body;
