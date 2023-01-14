@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-json": "json-server --watch scripts/products.json"
+    "start-json": "json-server --watch server/products.json"
   },
   "repository": {
     "type": "git",
