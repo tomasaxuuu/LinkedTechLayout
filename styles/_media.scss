@@ -75,6 +75,9 @@
     .nav-menu.active {
         top: 0;
     }
+    // ::-webkit-scrollbar {
+    //     width: 0;
+    // }
     .menu-btn {
        display: flex;
        z-index: 101;

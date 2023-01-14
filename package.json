@@ -1,0 +1,24 @@
+{
+  "name": "linkedtech",
+  "version": "1.0.0",
+  "description": "my-pet-project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-json": "json-server --watch scripts/products.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomasaxuuu/LinkedTechLayout.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomasaxuuu/LinkedTechLayout/issues"
+  },
+  "homepage": "https://github.com/tomasaxuuu/LinkedTechLayout#readme",
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "node": "^19.4.0"
+  }
+}

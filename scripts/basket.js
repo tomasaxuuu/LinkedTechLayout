@@ -107,6 +107,7 @@ window.addEventListener("click", function(event) {
        orderSum.innerHTML = `The amount of your order: $ ${Math.round(priceSum)}`;
        circleCountItemsInBasket.innerHTML = `${countItemInBasket}`;
        headerCountItemsInBasket.innerHTML =  `${countItemInBasket}`;
+       circleCountItemsInBasket > 0 ? emptyBasket.style = "display: none" : emptyBasket.style = "display: flex";
     }
 });
 
