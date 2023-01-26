@@ -2,13 +2,11 @@ const productsContainer = document.querySelector(".our-products");
 renderProducts();
 //функция рендера всех товаров
 function renderProducts () {
-    let CATALOG = []; 
     fetch('http://localhost:3000/items')
         .then(res => res.json())
         .then(body => {
-            CATALOG = body;
             let product = '';
-            CATALOG.forEach(el => {
+            body.forEach(el => {
                 product += `
                 <div class="item-product" data-id=${el.id}>
                     <span class="sale">

@@ -6,11 +6,6 @@ window.addEventListener("click", function(event) {
         const buttonsParent = event.target.closest('.buttons');
         // находим счетчик
         counter = buttonsParent.querySelector('[data-counter]');
-
-        event.target.dataset.action == "minus" 
-        ? counter.innerText == 1 
-        ? 1 
-        : --counter.innerText 
-        : counter.innerText = ++counter.innerText;
+        event.target.dataset.action == "minus" ? counter.innerHTML == 1 ? 1 : --counter.innerHTML : ++counter.innerHTML;
     }
 });

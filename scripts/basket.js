@@ -7,9 +7,10 @@ const orderSum = document.querySelector(".price-basket");
 let countItemInBasket = 0;
 let priceSum = 0;
 
+
 // обращаемся ко всему окну
 window.addEventListener("click", function(event) {
-
+   
     const card = event.target.closest('.item-product');
      // находим родителя наших кнопок
     if(event.target.closest('.basket-block img')) {
@@ -66,6 +67,7 @@ window.addEventListener("click", function(event) {
 
         // вставка нашего товара в наш блок корзины
         basketCard.insertAdjacentHTML('beforeend', cardItem);
+        isEmpty();
     }
 
     // сумма товаров заносится в html
@@ -102,18 +104,16 @@ window.addEventListener("click", function(event) {
     // удаление само
     if(event.target.closest(".delete-item")) {
        basketCard.removeChild(deleteItemId);
+       isEmpty();
        priceSum -= Math.round(minusSum);
        countItemInBasket -= minusCount;
        orderSum.innerHTML = `The amount of your order: $ ${Math.round(priceSum)}`;
        circleCountItemsInBasket.innerHTML = `${countItemInBasket}`;
        headerCountItemsInBasket.innerHTML =  `${countItemInBasket}`;
-       circleCountItemsInBasket > 0 ? emptyBasket.style = "display: none" : emptyBasket.style = "display: flex";
     }
 });
 
 function deleteAllItems () {
-    emptyBasket.style = "display: flex";
-    
     // смотрим на ласт элемент нашего родителя
     let childNow = basketCard.lastChild;
 
@@ -132,4 +132,9 @@ function deleteAllItems () {
     // обнуление суммы корзины
     orderSum.innerHTML = `The amount of your order: $ ${0}`;
     priceSum = 0;
+    isEmpty();
 };
+
+let isEmpty = () => {
+    basketCard.clientHeight === 0 ? emptyBasket.style = "display: flex" : emptyBasket.style = "display: none";
+}
